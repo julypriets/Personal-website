@@ -17,9 +17,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-
-    <script src="script.js"></script>
-
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -63,10 +60,22 @@
         <div class="row justify-content-end">
             <div class="col-5 dark">
                 <h2>I love</h2>
-                <h1 id="myElement"></h1>
+                <h1 id="myElement" class="dark"></h1>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="/js/typeit.min.js"></script>
+    <script type="text/javascript">
+        new TypeIt('#myElement', {
+            strings: ["Web design", "Cars", "Petting dogs", "Classical music", "Learning", "Hans Zimmer", "Mindfulness"],
+            speed: 80,
+            breakLines: false,
+            waitUntilVisible: true,
+            loop:true,
+            nextStringDelay: 2000,
+            lifeLike:true,
+        }).go();
+    </script>
 </body>
 
 </html>
