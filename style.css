@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat:400,500,600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #5C5C5C;
+}
+
+img.background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: #CB3C83;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.dark {
+    color: white
+}
+
+/*Bootstrap modifications*/
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 1%;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    transition: 0.4s ease;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    border-bottom: 0px solid transparent;
+    width:0%;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+    border-bottom: 3px solid white;
+    padding: 6px 0px;
+    font-size: 1.1em;
+    width:90%
+}
+
+
+
+/* NEW STUFF */
+#navigation-bar a {
+    color: #848484;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#navigation-bar a:hover {
+    color: #e74c3c;
+}
+
+#navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #e74c3c;
+}
+
+#navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+}
