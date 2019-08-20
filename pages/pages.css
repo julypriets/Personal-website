@@ -56,7 +56,7 @@ img.bg {
     position: absolute;
     z-index: 2;
     top: 0;
-    max-width: 65%;
+    max-width: 55%;
 }
 
 #warn {
