@@ -20,6 +20,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <!-- Diagram -->
+    <link href="../util/skill-diagram/css/default.css" rel="stylesheet" type="text/css" />
+    <script src="../util/skill-diagram/js/jquery.js" type="text/javascript"></script>
+    <script src="../util/skill-diagram/js/raphael.js" type="text/javascript"></script>
+    <script src="../util/skill-diagram/js/init.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -59,7 +65,7 @@
             </div>
         </div>
         <div class="row" style="margin-top: 3%">
-            <div class="col-6">
+            <div class="col-5">
                 <h3 id="h3">Education</h3>
                 <br>
                 <p> When I first began to study, I used to be very distracted and wanted to draw or watch Spongebob
@@ -67,8 +73,59 @@
                     studying habits. Discipline and self improvement have incredibly made me a better self through time,
                     and also, an excellent student.</p>
             </div>
+            <div class="col-7">
+                <img src="../assets/Education.svg" alt="Education timeline" style="margin: 4% 0 0 5%">
+            </div>
+        </div>
+        <div class="row" style="margin-top:5%">
             <div class="col-6">
-                <img src="../assets/Education.svg" alt="Education timeline" style="margin-top: 4%">
+                <div id="diagram"></div>
+
+                <div class="get">
+                    <div class="arc">
+                        <span class="text">Vue</span>
+                        <input type="hidden" class="percent" value="95" />
+                        <input type="hidden" class="color" value="#3FB27F" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">Java</span>
+                        <input type="hidden" class="percent" value="90" />
+                        <input type="hidden" class="color" value="#D84F5F" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">SQL</span>
+                        <input type="hidden" class="percent" value="88" />
+                        <input type="hidden" class="color" value="#EACD59" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">Python</span>
+                        <input type="hidden" class="percent" value="78" />
+                        <input type="hidden" class="color" value="#264D6F" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">CSS</span>
+                        <input type="hidden" class="percent" value="75" />
+                        <input type="hidden" class="color" value="#28ABE3" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">Node</span>
+                        <input type="hidden" class="percent" value="70" />
+                        <input type="hidden" class="color" value="#6AA25A" />
+                    </div>
+                    <div class="arc">
+                        <span class="text">Angular</span>
+                        <input type="hidden" class="percent" value="65" />
+                        <input type="hidden" class="color" value="#d64867" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" style="margin-top: 3%">
+                <h3 id="h3">Skills</h3>
+                <br>
+                <p> When I first began to study, I used to be very distracted and wanted to draw or watch Spongebob
+                    Squarepants all the time. Nevertheless, I efforted and achieved academic success by getting used to
+                    studying habits. Discipline and self improvement have incredibly made me a better self through time,
+                    and also, an excellent student.</p>
             </div>
         </div>
     </div>
