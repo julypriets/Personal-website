@@ -59,7 +59,7 @@ img.bg {
     max-width: 52%;
 }
 
-#warn{
+#warn {
     color: rgb(139, 139, 139);
     border-left: #CB3C83 2px solid;
     padding-left: 1%;
@@ -107,6 +107,7 @@ button.btn.btn-primary:hover #link {
 
 button.btn.btn-primary:hover {
     background-color: #CB3C83;
+    color: white;
 }
 
 button.btn.btn-primary {
@@ -119,4 +120,30 @@ button.btn.btn-primary {
     font-weight: 500;
     font-size: 0.9rem;
     color: #CB3C83;
+}
+
+#submit {
+    color: #CB3C83;
+}
+
+#submit:hover {
+    color: white;
+}
+
+.form-group {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:rgb(83, 83, 83);
+}
+
+li{
+    color:#CB3C83;
+}
+
+li > p{
+    font-size: 1.1em;
 }
