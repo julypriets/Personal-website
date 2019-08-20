@@ -6,7 +6,15 @@ body {
     color: #5C5C5C;
 }
 
-#h1, #h2, #h3, #h4 {
+#h2.dark,
+p.dark {
+    color: white
+}
+
+#h1,
+#h2,
+#h3,
+#h4 {
     font-family: 'Lobster', cursive;
     color: #CB3C83;
 }
@@ -19,11 +27,11 @@ body {
     font-size: 3.8em;
 }
 
-#h3{
+#h3 {
     font-size: 3em;
 }
 
-#h4{
+#h4 {
     font-size: 2.5em;
 }
 
@@ -40,11 +48,22 @@ h6 {
     font-weight: 500;
 }
 
-.navbar-custom {
-    background-color: white;
-    margin-bottom: 0.5%;
+#border {
+    border-left: 4px solid #CB3C83;
 }
 
+img.bg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    max-width: 52%;
+}
+
+#warn{
+    color: rgb(139, 139, 139);
+    border-left: #CB3C83 2px solid;
+    padding-left: 1%;
+}
 
 /*Bootstrap modifications*/
 .navbar-nav>li {
@@ -72,5 +91,32 @@ h6 {
     border-bottom: 3px solid #CB3C83;
     padding: 7px 0px;
     font-size: 1.05em;
-    width: 100%
+    width: 100%;
+}
+
+.navbar-custom {
+    background-color: white;
+    margin-bottom: 0.5%;
+    z-index: 1;
+}
+
+button.btn.btn-primary:hover #link {
+    color: white;
+    text-decoration: none;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #CB3C83;
+}
+
+button.btn.btn-primary {
+    background-color: white;
+    border: 1px #CB3C83 solid;
+}
+
+#link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #CB3C83;
 }
