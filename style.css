@@ -41,6 +41,7 @@ h6 {
 
 #typeit {
     padding-top: 10%;
+    margin-bottom: 8%;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -60,6 +61,14 @@ h6 {
         font-size: 3em;
     }
 
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #profile{
+        height:200px;
+    }
 
 }
 
@@ -79,6 +88,15 @@ h6 {
         background-color: #CB3C83;
         margin-bottom: 2%;
     }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #profile {
+        height: 200px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -92,12 +110,21 @@ h6 {
 
     .navbar-custom {
         background-color: #CB3C83;
-        margin-bottom: 4%;
+        margin-bottom: 3%;
         margin-right: -15px;
     }
 
-    #name-description{
-        padding-left:8%;
+    #name-description {
+        padding-left: 8%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #profile {
+        height: 300px;
     }
 }
 
@@ -107,6 +134,16 @@ h6 {
         background-color: rgba(255, 255, 255, 0);
         margin-right: 1%;
         margin-bottom: 2%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+
+    #profile {
+        height: 350px;
     }
 }
 

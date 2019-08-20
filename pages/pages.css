@@ -56,7 +56,7 @@ img.bg {
     position: absolute;
     z-index: 2;
     top: 0;
-    max-width: 52%;
+    max-width: 65%;
 }
 
 #warn {
@@ -94,12 +94,6 @@ img.bg {
     width: 100%;
 }
 
-.navbar-custom {
-    background-color: white;
-    margin-bottom: 0.5%;
-    z-index: 1;
-}
-
 button.btn.btn-primary:hover #link {
     color: white;
     text-decoration: none;
@@ -134,16 +128,145 @@ button.btn.btn-primary {
     font-family: 'Montserrat', sans-serif;
 }
 
-label{
+label {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color:rgb(83, 83, 83);
+    color: rgb(83, 83, 83);
 }
 
-li{
-    color:#CB3C83;
+li {
+    color: #CB3C83;
 }
 
-li > p{
+li>p {
     font-size: 1.1em;
+}
+
+.list-group {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.list-group>a {
+    color: #CB3C83;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 2%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 7%;
+        padding-left: 8%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 4%;
+        margin-right: -15px;
+    }
+
+    #name-description {
+        padding-left: 8%;
+    }
+
+    /* change the link color */
+    .navbar-custom .navbar-nav .nav-link {
+        color: white;
+    }
+
+    #h2.dark,
+    p.dark {
+        color: #CB3C83;
+    }
+
+    p.dark {
+        color: #5C5C5C;
+        ;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0);
+        margin-right: 1%;
+        margin-bottom: 2%;
+        z-index: 1;
+    }
+}
+
+/*Bootstrap modifications*/
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    font-weight: 600;
 }
