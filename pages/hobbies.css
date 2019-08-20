@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat:400,500,600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #5C5C5C;
+}
+
+#h1, #h2, #h3, #h4 {
+    font-family: 'Lobster', cursive;
+    color: #CB3C83;
+}
+
+#h1 {
+    font-size: 4.8em;
+}
+
+#h2 {
+    font-size: 3.8em;
+}
+
+#h3{
+    font-size: 3em;
+}
+
+#h4{
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 0.9em;
+    color: #5C5C5C;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 0 8% 0 3%;
+}
+
+h6 {
+    color: #CB3C83;
+    font-weight: 500;
+}
+
+.navbar-custom {
+    background-color: white;
+    margin-bottom: 0.5%;
+}
+
+
+/*Bootstrap modifications*/
+.navbar-nav>li {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    transition: 0.4s ease;
+    color: rgba(83, 83, 83, 1);
+    text-decoration: none;
+    border-bottom: 0px solid transparent;
+    width: 0%;
+    padding: 10px 0;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #CB3C83;
+    border-bottom: 3px solid #CB3C83;
+    padding: 7px 0px;
+    font-size: 1.05em;
+    width: 100%
+}

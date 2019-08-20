@@ -15,7 +15,7 @@ img.background {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Lobster', cursive;
     color: #CB3C83;
 }
@@ -24,22 +24,98 @@ p {
     font-size: 0.9em;
 }
 
+h6 {
+    color: #CB3C83;
+    font-weight: 500;
+}
+
 .dark {
     color: white
+}
+
+
+#social-media {
+    height: 40px;
+    margin: 0 8px;
+}
+
+#typeit {
+    padding-top: 10%;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 2%;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #typeit {
+        background-color: #CB3C83;
+        padding-bottom: 50px;
+        margin-top: 7%;
+        padding-left: 8%;
+    }
+
+    .navbar-custom {
+        background-color: #CB3C83;
+        margin-bottom: 4%;
+        margin-right: -15px;
+    }
+
+    #name-description{
+        padding-left:8%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-custom {
+        background-color: rgba(255, 255, 255, 0);
+        margin-right: 1%;
+        margin-bottom: 2%;
+    }
 }
 
 /*Bootstrap modifications*/
 .navbar-nav>li {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 6px;
+    padding-top: 7px;
     font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.navbar-custom {
-    background-color: rgba(255, 255, 255, 0);
-    margin-right: 1%;
 }
 
 /* change the link color */
@@ -48,7 +124,7 @@ p {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     border-bottom: 0px solid transparent;
-    width:0%;
+    width: 0%;
     padding: 10px 0;
 }
 
@@ -59,5 +135,5 @@ p {
     border-bottom: 3px solid white;
     padding: 7px 0px;
     font-size: 1.05em;
-    width:100%
+    width: 100%
 }

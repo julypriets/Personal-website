@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Juliana Prieto</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,14 +18,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-
 </head>
 
 <body>
-    <img class="background" src="assets/background.svg">
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <img class="background d-none d-lg-block" src="assets/background.svg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,32 +50,44 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-5">
+    <div class="container-fluid p-lg-5 px-sm-2 px-xs-2 px-md-0">
+        <div class="row" id="name-description">
+            <div class="col-lg-5 col-md-8">
                 <h1>Juliana Prieto</h1>
-                <p>Hi! I'm a Systems and Computing Engineering student at University of Los Andes, Colombia. I'm
+                <p style="margin-top: 5%">Hi! I'm a Systems and Computing Engineering student at University of Los
+                    Andes, Colombia. I'm
                     passionate
                     about learning and constantly improving.</p>
             </div>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-5 dark">
+        <div class="row justify-content-end" id="typeit">
+            <div class="col-lg-5 col-md-12 col-sm-12 dark align-self-end">
                 <h2>I love</h2>
                 <h1 id="myElement" class="dark"></h1>
             </div>
         </div>
+        <div class="row align-items-end fixed-bottom" style="margin:0 0 1.5% 5%;">
+            <div class="col-lg-2 col-sm-6 col-xs-6">
+                <h6>Social networks</h6>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xs-6">
+                <img src="assets/social-media/github.svg" id="social-media" alt="">
+                <img src="assets/social-media/twitter.svg" id="social-media" alt="">
+            </div>
+        </div>
     </div>
-    <script type="text/javascript" src="/js/typeit.min.js"></script>
+    <script type="text/javascript" src="js/typeit.min.js"></script>
     <script type="text/javascript">
         new TypeIt('#myElement', {
-            strings: ["Web design", "Cars", "Petting dogs", "Classical music", "Learning", "Hans Zimmer", "Mindfulness"],
+            strings: ["Web design", "Cars", "Petting dogs", "Classical music", "Learning", "Hans Zimmer",
+                "Mindfulness"
+            ],
             speed: 80,
             breakLines: false,
             waitUntilVisible: true,
-            loop:true,
+            loop: true,
             nextStringDelay: 2000,
-            lifeLike:true,
+            lifeLike: true,
         }).go();
     </script>
 </body>
