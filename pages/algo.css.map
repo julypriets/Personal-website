@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACK,AAAD,UAAM,CAAA;EACF,KAAK,EAAC,GAAG;CACZ;;AAEA,AAAD,WAAO,CAAA;EACH,KAAK,EAAC,IAAI;CACb",
-    "sources": [
-        "algo.scss"
-    ],
-    "names": [],
-    "file": "algo.css"
-}
